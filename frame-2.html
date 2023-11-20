@@ -145,20 +145,29 @@
 
 			.baner__wrapper {
 				margin-bottom: 10px;
-				margin-left: 10px;
-				margin-right: 10px;
+				margin-left: 0px;
+				margin-right: 0px;
 				position: relative;
-				/*left: 50%;
-				transform: translateX(-50%);*/
+				left: 50%;
+				transform: translateX(-50%);
 				width: 100%;
 
 				position: relative;
-				right: 0;
+				right: auto;
 				max-width: 330px;
 			}
 
 			.baner-wrapper {
 				height: 560px;
+			}
+		}
+
+		@media (max-width: 380px) {
+			.baner__wrapper {
+				left: 0;
+				transform: translate(0);
+				margin-left: 10px;
+				margin-right: 10px;
 			}
 		}
 	</style>
