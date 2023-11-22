@@ -139,11 +139,33 @@
 		.baner {
 			height: 645px;
 		}
+		@media (max-width: 620px) {
+			.baner {
+				height: 560px;
+			}
+			.baner-wrapper {
+			height: 560px;
+		}
+			.baner__wrapper {
+				margin-bottom: 7px;
+				margin-left: 0px;
+				margin-right: 0px;
+				position: relative;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 100%;
 
+				position: relative;
+				right: auto;
+				max-width: 350px;
+				display: flex;
+				flex-direction: column;
+			}
+		}
         }
 		@media (max-width: 590px) {
 			.baner {
-				height: 560px;
+				height: 450px;
 				display: inline-flex;
 				align-items: flex-end;
 				background-position: 27% 40% !important;
@@ -170,35 +192,33 @@
 				position: relative;
 				right: auto;
 				max-width: 350px;
+				display: flex;
+				flex-direction: column;
+			}
+			.baner-wrapper {
+			height: 450px;
 			}
 
-			.baner-wrapper {
-				height: 560px;
-			}
-            .baner-wrapper {
-			    height: 715px;
-		    }
 
-            .baner {
-                height: 715px;
-            }
 		}
-        @media (max-width: 480px) {
-			.baner-wrapper {
-			height: 645px;
-		}
-
-		.baner {
-			height: 645px;
-		}
-
-        }
+       
 		@media (max-width: 400px) {
 			.baner__wrapper {
 				left: 0;
 				transform: translate(0);
 				margin-left: 7px;
 				margin-right: 7px;
+			}
+		}
+
+		@media (max-width: 400px) {
+			.baner {
+				height: 450px;
+
+			}
+
+			.baner-wrapper {
+			height: 450px;
 			}
 		}
 	</style>
